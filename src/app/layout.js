@@ -1,7 +1,15 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable semi */
+/* eslint-disable quotes */
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const helloYou    = (name)=> {
+  name = 'you' || name   ;
+  console.log("hello" + name + "!" )
+}
 
 export const metadata = {
   title: "Create Next App",

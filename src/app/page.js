@@ -1,3 +1,7 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable space-before-function-paren */
+/* eslint-disable semi */
+/* eslint-disable quotes */
 import Image from "next/image";
 import styles from "./page.module.css";
 
