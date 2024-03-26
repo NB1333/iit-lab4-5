@@ -7,6 +7,7 @@ export default function Home() {
       <div className={styles.description}>
         <p>
           Hello from third team!!!&nbsp;
+          if looks could kill
           <code className={styles.code}>src/app/page.js</code>
         </p>
         <div>
