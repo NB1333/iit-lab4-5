@@ -6,10 +6,10 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const helloYou    = (name)=> {
-  name = 'you' || name   ;
-  console.log("hello" + name + "!" )
-}
+// const helloYou    = (name)=> {
+//   name = 'you' || name   ;
+//   console.log("hello" + name + "!" )
+// }
 
 export const metadata = {
   title: "Create Next App",
