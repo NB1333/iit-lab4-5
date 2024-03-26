@@ -11,6 +11,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Run ESLint
+      run: |
+        npm install
+        npx eslint .
+
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v1
 
