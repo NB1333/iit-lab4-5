@@ -12,6 +12,8 @@ export default function Home() {
         <p>
           Hello from third team!!!&nbsp;
           if looks could kill
+          <br />
+          DNA
           <code className={styles.code}>src/app/page.js</code>
         </p>
         <div>

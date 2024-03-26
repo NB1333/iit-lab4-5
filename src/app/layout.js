@@ -1,3 +1,4 @@
+/* eslint-disable space-before-function-paren */
 /* eslint-disable comma-dangle */
 /* eslint-disable semi */
 /* eslint-disable quotes */
