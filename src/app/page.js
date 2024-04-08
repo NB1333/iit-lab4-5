@@ -15,6 +15,7 @@ export default function Home() {
           OMG
           hello
           okay.
+          travis scott
           <br />
           DNA
           <code className={styles.code}>src/app/page.js</code>
