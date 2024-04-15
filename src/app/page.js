@@ -12,6 +12,7 @@ export default function Home() {
         <p>
           Hello from third team!!!&nbsp;
           shout out BABUSHKA BOI
+          travis scott
           <br />
           DNA
           <code className={styles.code}>src/app/page.js</code>
