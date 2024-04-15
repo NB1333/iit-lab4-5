@@ -1,3 +1,9 @@
+provider "aws" {
+  region     = var.aws_region
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
+}
+
 data "aws_security_group" "allow_web" {
   name = "allow_web_traffic_unique"
 }
