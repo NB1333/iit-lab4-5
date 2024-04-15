@@ -1,39 +1,3 @@
-provider "aws" {
-  region     = var.aws_region
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
-}
-
-resource "aws_security_group" "allow_web" {
-  name        = "allow_web_traffic_unique"
-  description = "Allow web inbound traffic"
-  
-  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["185.223.115.27/32"]
-  }
-
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  tags = {
-    Name = "allow_web_unique"
-  }
-}
-
 data "aws_security_group" "allow_web" {
   name = "allow_web_traffic_unique"
 }
@@ -63,5 +27,5 @@ resource "aws_instance" "web" {
     Name = "lab6Instance"
   }
 
-  vpc_security_group_ids = [aws_security_group.allow_web.id]
+  vpc_security_group_ids = [data.aws_security_group.allow_web.id]
 }
