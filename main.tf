@@ -33,6 +33,7 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_security_group" "allow_web" {
+  count       = "${length(data.aws_security_groups.allow_web.ids) == 0 ? 1 : 0}"
   name        = "allow_web_traffic"
   description = "Allow web inbound traffic"
   
@@ -59,5 +60,12 @@ resource "aws_security_group" "allow_web" {
 
   tags = {
     Name = "allow_web"
+  }
+}
+
+data "aws_security_groups" "allow_web" {
+  filter {
+    name   = "group-name"
+    values = ["allow_web_traffic"]
   }
 }
