@@ -21,7 +21,7 @@ resource "aws_instance" "web" {
               sudo systemctl start docker
               sudo systemctl enable docker
               docker pull nb1333/lab4-5:latest
-              docker run -d -p 80:80 nb1333/lab4-5:latest
+              docker run -d -p 80:3000 nb1333/lab4-5:latest
               docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --interval 60
               EOF
 
@@ -60,9 +60,4 @@ resource "aws_security_group" "allow_web" {
   tags = {
     Name = "allow_web"
   }
-}
-
-resource "aws_key_pair" "deployer" {
-  key_name   = "terraform-deployer-key"
-  public_key = file("~/Downloads/keyforlab6.pem")
 }

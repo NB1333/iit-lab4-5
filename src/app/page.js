@@ -11,11 +11,7 @@ export default function Home() {
       <div className={styles.description}>
         <p>
           Hello from third team!!!&nbsp;
-          if hello from third team is not visible, then it is not working.
-          OMG
-          hello
-          okay.
-          travis scott
+          shout out
           <br />
           DNA
           <code className={styles.code}>src/app/page.js</code>
