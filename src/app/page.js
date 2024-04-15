@@ -11,7 +11,7 @@ export default function Home() {
       <div className={styles.description}>
         <p>
           Hello from third team!!!&nbsp;
-          shout out
+          shout out BABUSHKA BOI
           <br />
           DNA
           <code className={styles.code}>src/app/page.js</code>
