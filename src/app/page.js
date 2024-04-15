@@ -13,6 +13,7 @@ export default function Home() {
           Hello from third team!!!&nbsp;
           shout out BABUSHKA BOI
           travis scott – cinderella
+          JUST COME OUTSIDE FOR THE NIGHT
           <br />
           DNA
           <code className={styles.code}>src/app/page.js</code>
